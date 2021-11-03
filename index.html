@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website Pribadi</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body {
+			font-family: verdana;
+			background: #eee;
+		}
+		.banner-area {
+			width: 100;
+			height: 100vh;
+			background:linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(BG-LP/bg.jpg); 
+			background-size: cover;
+
+		}
+		.nav ul{
+			font-size: 12px;
+			float: right;
+			list-style-type: none;
+			margin-top: 25px;
+			margin-right: 10px;
+			padding-right: 100px
+		}
+		.nav ul li {
+			display: inline-block;
+		}
+
+		ul li a {
+			text-decoration: none;
+			color: #ddd;
+			padding: 5px 20px;
+			transition: 0.5%;
+			margin-top: 10px;
+		}
+
+		ul li a:hover{
+			background-color: #222;
+			color: #eee;
+		}
+
+		.content-area {
+			width: 100%;
+			height: 90%;
+			display:flex;
+			justify-content:center;
+			align-items: center;
+		}
+		.content {
+			text-align: center;
+		}
+		.content img {
+			width: 150px;
+			height: 150px;
+			border-radius: 250px;
+		}
+
+		.content h1 {
+			font-size: 35px;
+			color: white;
+		}
+		.content p {
+			font-size: 20px;
+			color: #ddd;
+		}
+		.sec {
+			position: relative;
+			padding: 100px;
+			background: #eee;
+		}
+
+		.sec h1{
+			font-size: 35px;
+			margin-bottom: 10px;
+			color: #222
+		}
+		.ul{
+			position: relative;
+			margin-left: 150px;
+		}
+		footer{
+			background: #222;
+			padding-top: 40px
+
+		}
+		.footer-content{
+			display: flex;
+			background: #222;
+			text-align: center;
+			align-items: center;
+			color: #eee;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.footer-content p{
+			max-width: 500px;
+			margin:10px auto;
+			line-height: 28px;
+			font-size:14px;
+		}
+		.socials
+		{
+			list-style: none;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 1rem 0 3rem 0;
+		}
+		.social li{
+			margin: 0 10px;
+		}
+		.socials a{
+			text-decoration: none;
+			color: #fff;
+		}
+
+		.socials a i {
+			font-size: 17px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+	<div class="nav">
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#skills">Skills</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</div>
+</header>
+		<div class="banner-area" id="home">
+			<div class="content-area">
+				<div class="content">
+					<img src="img/saya.jpg">
+					<br>
+					<br>
+					<br>
+					<h1> Selamat Datang di Website Pribadi Ku</h1>
+					<p>Disini Anda bisa mencari tahu tentang Saya</p>
+				</div>
+			</div>
+			</div>
+		</div>
+		<br><br><br>
+		<div class="sec" id="about">
+			<h1>Tentang Saya</h1><br>
+			<p>Hi, saya Mohammad Faudi. Saya berumur 18 tahun, beralamat di jln. mushola no 51 mekarsari cimanggis Depok. saat ini aku lagi belajar membuat website pribadi. aku tertarik mempelajari pemrograman web, karena menurut ku sangat menarik dan seru. Selain itu, aku juga suka video editing dan desain grafis. Salam Kenal Ya!
+		</div>
+		<br><br>
+		<div class="sec" id="skills">
+			<h1>Skills</h1><br>
+			Seperti yang saya katakan, saya mempunyai beberapa skills. Walaupun belum expert, tetapi saya terus berusaha untuk mengembangkan skill saya. Berikut skill yang saya miliki.
+				<ul style="margin-left: 50px" id="skills">
+					<li>Graphic Design</li>
+					<li>Video Editing</li>
+					<li>html</li>
+					<li>css</li>
+				</ul>
+			</div>
+			<footer>
+				<div class="footer-content" id="contact">
+					<h3>Contact</h3>
+						<p>Hubungi saya jika anda ingin berbicara</p>
+						<ul class="socials">
+							<li><a href="https://web.facebook.com/mohammad.faudi.1?_rdc=1&_rdr"><i class="fa fa-facebook-f"></i></a></li>
+							<li><a href="https://www.instagram.com/p0pau_/"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="http://wa.link/n178sd"><i class="fa fa-whatsapp"></i></a></li>
+						</ul>
+				<div class="footer-bottom">
+					<p>copyright &copy; 2021 Mohammad Faudi</p>
+				</div>
+			</div>
+			</footer>
+	</body>
+</html>
