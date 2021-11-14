@@ -7,6 +7,9 @@
 		html {
 			scroll-behavior: smooth;
 		}
+		a{
+			text-decoration: none;
+		}
 		*{
 			padding: 0;
 			margin: 0;
@@ -28,7 +31,6 @@
 			float: right;
 			list-style-type: none;
 			margin-top: 25px;
-			margin-right: 10px;
 			padding-right: 100px
 		}
 		.nav ul li {
@@ -73,15 +75,17 @@
 			color: #ddd;
 		}
 		.sec {
-			position: relative;
 			padding: 100px;
 			background: #eee;
+			text-align: center;
 		}
 
 		.sec h1{
 			font-size: 35px;
 			margin-bottom: 10px;
-			color: #222
+			color: #222;
+			text-align: center;
+
 		}
 		.ul{
 			position: relative;
@@ -126,6 +130,38 @@
 		.socials a i {
 			font-size: 17px;
 		}
+
+		.tabel {
+			margin-left: auto;
+			margin-right: auto;
+			border-collapse: collapse;
+			background: #fafafa;
+			border-spacing: 0;
+			border-radius: 20px 20px 0 0;
+			overflow: hidden;
+			box-shadow: 0 5px 12px rgba(32,32,32,.3)
+		}
+		.tabel th {
+			font-size: 20px;
+			color: #eee;
+			padding: 15px;
+	background: rgb(9,7,36);
+background: linear-gradient(0deg, rgba(9,7,36,1) 0%, rgba(34,34,41,1) 44%, rgba(57,57,57,1) 100%);
+}
+
+		.tabel td {
+			font-size: 14px;
+			padding: 30px;
+			background-color: #fafafa;
+					}
+
+		.logo li {
+				float: left;
+			list-style-type: none;
+			margin-top: 25px;
+			
+			padding-left:100px;
+				}
 	</style>
 </head>
 <body>
@@ -135,9 +171,13 @@
 			<li><a href="#home">Home</a></li>
 			<li><a href="#about">About</a></li>
 			<li><a href="#skills">Skills</a></li>
+			<li><a href="#tabel">Table</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</div>
+		<ul class="logo">
+			<li><img src="logo/mf.png" width="35px"></li>
+		</ul>
 </header>
 		<div class="banner-area" id="home">
 			<div class="content-area">
@@ -148,34 +188,82 @@
 					<br>
 					<h1> Selamat Datang !</h1>
 					<p>Disini Anda bisa mencari tahu tentang Saya</p>
+					<br><br><br>
+					<audio controls loop class="audio">
+						<source src="audio/mozart.mp3" type="audio/mp3">
+					</audio>
 				</div>
 			</div>
 			</div>
 		</div>
-		<br><br><br>
+		<br><br>
 		<div class="sec" id="about">
 			<h1>Tentang Saya</h1><br>
-			<p>Hi, saya Mohammad Faudi. Saya berumur 18 tahun, beralamat di jln. mushola mekarsari. saat ini saya lagi belajar membuat website pribadi. Saya tertarik mempelajari pemrograman web, karena menurut saya sangat menarik dan seru. Selain itu, saya juga suka video editing dan desain grafis. Salam Kenal Ya!
+			<p>Hi, saya Mohammad Faudi. Saya berumur 18 tahun, beralamat di jln. mushola mekarsari. saat ini saya  lagi belajar membuat website pribadi. saya tertarik mempelajari pemrograman web, karena menurut saya sangat menarik dan seru. Selain itu, saya juga suka video editing dan desain grafis. Salam Kenal Ya! </p>
 		</div>
-		<br><br>
 		<div class="sec" id="skills">
 			<h1>Skills</h1><br>
 			Seperti yang saya katakan, saya mempunyai beberapa skills. Walaupun belum expert, tetapi saya terus berusaha untuk mengembangkan skill saya. Berikut skill yang saya miliki.
-				<ul style="margin-left: 50px" id="skills">
 					<li>Graphic Design</li>
 					<li>Video Editing</li>
 					<li>html</li>
 					<li>css</li>
-				</ul>
 			</div>
+				<h1 align="center" id="tabel">Table</h1>
+				<br><br>
+				
+				<table class="tabel" width="80%" border="1">
+					<thead>
+						<tr>
+							<th>Materi</th>
+							<th>Ringkasan</th>
+                    		<th>Pengalaman</th>
+						</tr>
+						<tbody>
+							<tr>
+								<td>
+										<li><a href="Text Html/hello-world.html">HTML dengan text</a></li>
+                            			<li><a href="halaman web/tabel-layout.html">Halaman Web</a></li>
+                            			<li><a href="Format Text/format-text.html">Format text HTML</a></li>
+                            			<li><a href="Hyperlink/hyperlink.html">Hyperlink di Html</a></li>
+                            			<li><a href="gambar/Tata-Surya.html">Gambar di Html</a></li>
+                            			<li><a href="Elemen semantik/elemen-semantik.html">Semantik di Html</a></li>
+                            			<li><a href="video/mulai-vid.html">Video di Html</a></li>
+								</td>
+								<td>
+									<li><a href="Text Html/hello world.pdf">Ringkasan Html dengan text</a></li>
+									<li><a href="halaman web/2.pdf">Ringkasan Halaman Web</a></li>
+									<li><a href="Format Text/3.pdf">Ringkasan Format Text</a></li>
+									<li><a href="Hyperlink/4.pdf">Ringkasan Hyperlink</a></li>
+									<li><a href="gambar/5.pdf">Ringkasan Gambar</a></li>
+									<li><a href="Elemen semantik/6.pdf">Ringkasan Semantik</a></li>
+									<li><a href="video/7.pdf">Rinkasan Video</a></li>
+								</td>
+								<td>
+									<li>saya dapat membuat text hello word di html</li>
+									<li>saya belajar membuat table di html</li>
+									<li>saya dapat mengetahui format text apa saja yang terdapat di html</li>
+									<li>saya dapat membuat link di html</li>
+									<li>saya dapat memasukkan gambar di html</li>
+									<li>saya dapat membuat website pribadi</li>
+									<li>saya dapat memasukkan video di html</li>
+								</td>
+							</tr>
+						</tbody>
+					</thead>
+		</table>
+	</div>
+		<br>
+		<br>
+		<br><br><br>		
 			<footer>
 				<div class="footer-content" id="contact">
 					<h3>Contact</h3>
 						<p>Hubungi saya jika anda ingin berbicara</p>
 						<ul class="socials">
-							<li><a href="https://web.facebook.com/mohammad.faudi.1?_rdc=1&_rdr"><i class="fa fa-facebook-f"></i></a></li>
-							<li><a href="https://www.instagram.com/p0pau_/"><i class="fa fa-instagram"></i></a></li>
-							<li><a href="http://wa.link/n178sd"><i class="fa fa-whatsapp"></i></a></li>
+							<li><a href="https://web.facebook.com/mohammad.faudi.1?_rdc=1&_rdr" title="Facebook" target="blank"><i class="fa fa-facebook-f"></i></a></li>
+							<li><a href="https://www.instagram.com/p0pau_/" title="Instagram" target="blank"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="http://wa.link/n178sd" title="Whatsapp" target="blank"><i class="fa fa-whatsapp"></i></a></li>
 						</ul>
 				<div class="footer-bottom">
 					<p>copyright &copy; 2021 Mohammad Faudi</p>
